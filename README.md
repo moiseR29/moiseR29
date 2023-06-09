@@ -1,168 +1,61 @@
-# Moises Rebatta
+# Hello! Im Moises Rebatta :D
 
-```typescript
-interface DeveloperSkills {
-  [key: string]: Array<string>;
-}
+I am a backend developer, who likes DevOps especially infrastructure as code :D
 
-interface Developer {
-  getName(): string;
-  getTitle(): string;
-  getLocation(): string;
-  getWeb(): string;
-  getSkills(): DeveloperSkills;
-}
+I usually create tools to facilitate the daily development, and try to automate everything.
 
-class GitHubDeveloper implements Developer {
-  constructor(
-    private _name: string,
-    private _title: string,
-    private _location: string,
-    private _web: string,
-    private _skills: DeveloperSkills = {}
-  ) {}
+I like linux very much, I have it super customized, in this github are my dotfiles and configurations that I have of my system.
 
-  getName(): string {
-    return this._name;
-  }
 
-  getTitle(): string {
-    return this._title;
-  }
+## Skill
 
-  getWeb(): string {
-    return this._web;
-  }
+### BackEnd
 
-  getLocation(): string {
-    return this._location;
-  }
+- NodeJs ( Javascript, Typescript )
+- Express
+- Npm, Yarn
+- Jest, Mocha
+- Sql ( Postgres, MySql )
+- NoSql ( Mongo, Cosmos )
+- Redis
+- Rest, GraphQL
+- Go
 
-  getSkills(): DeveloperSkills {
-    return this._skills;
-  }
-}
 
-class Presentation {
-  constructor(private _developer: Developer) {}
+### DevOps
 
-  private get developer(): Developer {
-    return this._developer;
-  }
+- Docker
+- Kubernetes
+- Terraform
+- Aws
+- CI/CD ( CircleCI, GitHub Action, Travis )
+- Script ( Bash, Go, Python, Node )
+- VIM
+- Ssh
+- Nginx
+- Prometheus & Grafana
+- Databases ( Dumps, Restore, Users Managments )
+- Networking ( 50% )
 
-  message(): void {
-    console.log(`
-Welcome to my profile, My Name is ${this.developer.getName()}.\nI´m ${this.developer.getTitle()}.\nI´m from ${this.developer.getLocation()}
-My Skills are:\n ${Object.entries(this.developer.getSkills())
-      .map(([key, value]) => `- ${key}: \n  * ${value.join('\n  * ')}\n`)
-      .join('')}
-    `);
-  }
-}
 
-const MoisesSkills: DeveloperSkills = {
-  backend: [
-    'NodeJs (Express, Fastity)',
-    'Typescript',
-    'GraphQL',
-    'REST',
-    'Python',
-    'CLI',
-    'npm (deploy, push, pull libraries)',
-    'Extern Services (API Integrations)',
-  ],
-  database: ['Postgres', 'MySql | MariaDB', 'MongoDB', 'CosmosDB', 'REDIS'],
-  devops: [
-    'AWS',
-    'Terraform',
-    'Kubernetes',
-    'Linux',
-    'Docker',
-    'SSH',
-    'Travis',
-    'Bash',
-    'Python',
-    'GO',
-    'NGINX',
-    'NGROK',
-    'CircleCI',
-    'GitHubAction',
-    'Heroku',
-  ],
-  frontend: ['React'],
-  arquitecture: ['Microservices', 'Serverless', 'Events', 'MVC', 'Monolitcs'],
-  arquitectureDriven: ['Clean | Hexagonal', 'DDD', 'TDD'],
-  tools: ['GIT', 'Github', 'BitBucket', 'Jira', 'Confluence'],
-};
+### General
 
-const MoisesRebatta = new GitHubDeveloper(
-  'Moises Rebatta',
-  'Sr Backend && DevOps',
-  'Buenos Aires, Argentina',
-  'https://www.linkedin.com/in/moises-rebatta-bb1617167',
-  MoisesSkills
-);
+- Linux ( Arch & Ubuntu )
+- Desing Pattern ( Code, Architecture )
+- MicroServices
+- Git & GitFlow
+- Jira
+- Scrum
 
-new Presentation(MoisesRebatta).message();
+### FrontEnd
 
-```
-```bash
-moise@ubuntu: ~
-Welcome to my profile, My Name is Moises Rebatta.
-I´m Sr Backend && DevOps.
-I´m from Buenos Aires, Argentina
-My Skills are:
- - backend: 
-  * NodeJs (Express, Fastity)
-  * Typescript
-  * GraphQL
-  * REST
-  * Python
-  * CLI
-  * npm (deploy, push, pull libraries)
-  * Extern Services (API Integrations)
-- database: 
-  * Postgres
-  * MySql | MariaDB
-  * MongoDB
-  * CosmosDB
-  * REDIS
-- devops: 
-  * AWS
-  * Terraform
-  * Kubernetes
-  * Linux
-  * Docker
-  * SSH
-  * Travis
-  * Bash
-  * Python
-  * GO
-  * NGINX
-  * NGROK
-  * CircleCI
-  * GitHubAction
-  * Heroku
-- frontend: 
-  * React
-- arquitecture: 
-  * Microservices
-  * Serverless
-  * Events
-  * MVC
-  * Monolitcs
-- arquitectureDriven: 
-  * Clean | Hexagonal
-  * DDD
-  * TDD
-- tools: 
-  * GIT
-  * Github
-  * BitBucket
-  * Jira
-  * Confluence
+- React
 
-```
+
+
+## you can find me at:
+
+- [linkedIn](https://www.linkedin.com/in/moises-rebatta-bb1617167/)
 
 </br></br>
 <h2>💻 Some stats 💻</h2>
